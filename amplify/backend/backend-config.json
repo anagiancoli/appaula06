@@ -25,5 +25,29 @@
         ]
       }
     }
+  },
+  "api": {
+    "appaula06": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "app aula06"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  },
+  "storage": {
+    "imagensappaula06": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
